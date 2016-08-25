@@ -1,0 +1,71 @@
+name "xlsxwriter"
+description "A D binding for libxlsxwriter"
+authors "Justin Whear"
+copyright "Copyright © 2016, Justin Whear"
+license "FreeBSD"
+
+targetType "sourceLibrary"
+libs "xlsxwriter"
+
+subPackage {
+	name "hello"
+	targetType "executable"
+	sourceFiles "examples/hello.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "anatomy"
+	targetType "executable"
+	sourceFiles "examples/anatomy.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "demo"
+	targetType "executable"
+	sourceFiles "examples/demo.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "chart"
+	targetType "executable"
+	sourceFiles "examples/chart.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "panes"
+	targetType "executable"
+	sourceFiles "examples/panes.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "autofilter"
+	targetType "executable"
+	sourceFiles "examples/autofilter.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "merge_range"
+	targetType "executable"
+	sourceFiles "examples/merge_range.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "tutorial3"
+	targetType "executable"
+	sourceFiles "examples/tutorial3.d"
+	dependency "xlsxwriter"  path = "."
+}
+
+subPackage {
+	name "array_formula"
+	targetType "executable"
+	sourceFiles "examples/array_formula.d"
+	dependency "xlsxwriter"  path = "."
+}
